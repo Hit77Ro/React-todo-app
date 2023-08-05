@@ -1,11 +1,11 @@
 // TodoForm.jsx
 import { useState } from "react";
 
-export default function TodoForm({ onSubmit }) {
+export default function TodoForm({ submitForm }) {
   const [userInput, setUserInput] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSubmit(userInput);
+    submitForm(userInput);
     setUserInput("");
   };
   return (
