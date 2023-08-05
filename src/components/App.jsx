@@ -50,7 +50,7 @@ export default function App() {
       <h1 className="header"> todo list</h1>
 
       <TodoList
-        onDeletTodo={deleteTodo}
+        deletTodo={deleteTodo}
         todos={todos}
       />
     </>

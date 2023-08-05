@@ -7,7 +7,7 @@ export default function TodoList({ todos, deletTodo }) {
       {todos.length > 0 ? (
         <ul className="list">
           {todos.map((obj) => (
-            <TodoItem key={obj.id} todo={obj} onDeleteTodo={deletTodo} />
+            <TodoItem key={obj.id} todo={obj} deleteTodo={deletTodo} />
           ))}
         </ul>
       ) : (
@@ -16,3 +16,4 @@ export default function TodoList({ todos, deletTodo }) {
     </>
   );
 }
+
